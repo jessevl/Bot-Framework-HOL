@@ -1,0 +1,15 @@
+{
+  "name": "marsbot",
+  "version": "1.0.0",
+  "description": "This is a Bot demo project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse van Leth",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.5.4",
+    "restify": "^4.3.0"
+  }
+}

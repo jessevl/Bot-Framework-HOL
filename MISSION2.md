@@ -6,7 +6,7 @@ The bot we made in Mission 1 currently doesn't do much. In this part, we'll be b
 
 ### Setting up LUIS
 
-Before starting on this tutorial, we first need to make our bot understand natural language. Follow this [tutorial](https://github.com/alyssaong1/HOL-NUSHackathon/blob/master/LUIS.MD) to make your bot work with LUIS.
+Before starting on this tutorial, we first need to make our bot understand natural language. Follow this [tutorial](LUIS.MD) to make your bot work with LUIS.
 
 ### After setting up LUIS
 
@@ -21,9 +21,9 @@ We're gonna go to CNN and copy paste the headlines manually into our bot. Just k
 - [Endpoints and examples of requests and responses](https://msdn.microsoft.com/en-us/library/dn760783.aspx)
 - [Parameters for requests](https://msdn.microsoft.com/en-us/library/dn760793(v=bsynd.50).aspx)
 
-To start using the Bing News API, we will need a subscription key. We can get one in a similar manner as how we got our LUIS subscription key. Go to the [Azure portal](https://portal.azure.com) and log in. Then click + New and search for Cognitive Services. Create a new Cognitive Services API instance, and make sure you select Bing Search APIs in the API type field. 
+To start using the Bing News API, we will need a subscription key. You can get one by clicking on the 'get started for free' button on the top right of the Bing New API page. If you run into trial limits you can get a real subscription by going to the [Azure portal](https://portal.azure.com) and clicking + New and search for Cognitive Services. Create a new Cognitive Services API instance, and make sure you select Bing Search APIs in the API type field. 
 
-![SearchApi](https://raw.githubusercontent.com/alyssaong1/HOL-NUSHackathon/master/Images/Mission2/searchapi.PNG)
+![SearchApi](Images/Mission2/searchapi.PNG)
 
 Now that you have your subscription key (you can use either key 1 or key 2, it doesn't matter), you can go to the [API testing console](https://dev.cognitive.microsoft.com/docs/services/56b43f72cf5ff8098cef380a/operations/56f02400dbe2d91900c68553) and play around with the API if you'd like. Try sending some requests and see the responses you get. [Here](https://msdn.microsoft.com/en-us/library/dn760793(v=bsynd.50).aspx#categoriesbymarket) are all the possible categories for Category News by the way. 
 
@@ -243,3 +243,4 @@ Lastly, let's update package.json to indicate that our starting script is app.js
 
 You have now successfully fetched news from civilization! Microsoft Bot Framework makes it easy to deploy your bot onto any platform, but you need to be aware that not all messaging platforms (e.g. Kik, Telegram) will support the same attachments (e.g. most of them support sending text and image messages, but not cards). While the logic is the same (i.e. the API calls you make will not change across the bots), you'd have to check which messaging platform the user's message is coming from, then handling how your response is sent based on that. I may do a tutorial for this in future. 
 
+[Click here to go to the next mission](MISSION3.md)

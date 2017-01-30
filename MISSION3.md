@@ -4,7 +4,7 @@ Alright you're pretty much on your own for this mission. The goal of the mission
 
 The completed conversation if you complete this mission should look like this:
 
-![Completed](https://raw.githubusercontent.com/alyssaong1/HOL-NUSHackathon/master/Images/Mission3/m3result.PNG)
+![Completed](Images/Mission3/m3result.PNG)
 
 **Note that you MUST use LUIS!**
 
@@ -36,3 +36,5 @@ var options = {
 - https://heavyeditorial.files.wordpress.com/2016/05/harambe-22.jpg
 
 **Let us know what the captions for each 3 are. No cheating! We will be reviewing your code and potentially asking questions.**
+
+[Click here to go to the bonus mission](BONUS.md)

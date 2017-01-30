@@ -6,13 +6,9 @@ This part has been largely based off the setup documented by Microsoft [here](ht
 - [NodeJS](https://nodejs.org/en/). After you've installed this, open your command line and run `npm install npm -g`. This updates Node's Package Manager (npm) to the latest version.
 - [Visual Studio Code](https://code.visualstudio.com/) (or any other code editor of your choice)
 
-Make a new folder for your bot. All your bot's code will be stored in this folder. Next, open up your command prompt and navigate to your bot's folder using cd. Refer to [this link](http://www.wikihow.com/Change-Directories-in-Command-Prompt) if you're not sure how to do this. Mine ends up looking something like this:
+Make a new folder for your bot. All your bot's code will be stored in this folder. Next, open up your command prompt and navigate to your bot's folder using cd. Refer to [this link](http://www.wikihow.com/Change-Directories-in-Command-Prompt) if you're not sure how to do this. Now run `npm init` in this folder to start your nodejs project. They'll fill in some fields for you by default, you can keep pressing enter. You can enter the description for your bot and author name (as I have done) if you'd like, but it's ok to leave them blank too. 
 
-<insert img>
-
-Now run `npm init` to start your nodejs project. They'll fill in some fields for you by default, you can keep pressing enter. You can enter the description for your bot and author name (as I have done) if you'd like, but it's ok to leave them blank too. 
-
-<insert img>
+![NPM Init](Images\Mission1\npm-init.png)
 
 If you check your bot's folder now, there should be a package.json file. [package.json](https://docs.npmjs.com/files/package.json) is like a description of the project, such as which packages our node project uses. It does other useful stuff too that we don't need for this tutorial. Now run the following 2 commands separately in the command line to install the botbuilder and restify packages (each of the packages may take a while to finish installing):
 
@@ -25,11 +21,11 @@ Packages (or dependencies) are like parts/modules that others have written which
 
 Open up Visual Studio Code. Go to File > Open Folder... and select your bot's folder. You should be able to see your file structure on the left panel, it'll look something like this:
 
-<insert img>
+![Visual Studio Code Folders](Images\Mission1\vscode-setup.png)
 
  The node_modules folder contains all the packages needed in our project. If you look into the folder, you'll see more than just BotBuilder and Restify - that's because they require other packages to work as well. Right click the left panel area and create a new file. Name it 'app.js'. Your resulting folder structure should look like this:
  
- Now copy and paste the following snippet of code into app.js:
+ Now copy and paste the following snippet of code into a new file named app.js:
 
 ```js
 // Reference the packages we require so that we can use them in creating the bot
@@ -75,4 +71,8 @@ Open the Bot Framework Emulator. You should see some text fields at the top. Loc
 
 Go ahead and type a message in the chatbox at the bottom and send it. The bot should respond 'Hello World' every time you send it a message. If you look back at the command line, you'll be able to see some info on what's being called. Note that if there are any errors, you'll be able to see the error in the command line as well which helps with debugging. Press `Ctrl + c` in the command line when you're done talking to the bot. 
 
+![Bot Emulator](Images\Mission1\emulator.png)
+
 Congratulations, you've finished Mission 1! 
+
+[Click here to go to the next mission](MISSION2.md)
