@@ -33,13 +33,12 @@ Now that you have your subscription key (you can use either key 1 or key 2, it d
 Let's start off by getting the bot to understand us when we try to look for news or scan an image. Make sure your intentsDialog.matches line looks like this:
 
 ```js
-intentDialog.matches(/\b(hi|hello|hey|howdy)\b/i, '/sayHi')
-    .matches('getNews', '/topNews')
+intentDialog.matches('getNews', '/topNews')
     .matches('analyseImage', '/analyseImage')
     .onDefault(builder.DialogAction.send("Sorry, I didn't understand what you said."));
 ```
 
-Basically, when the user's utterance comes in to the bot, it gets checked against the regex first. If none of the regexes match, it will make a call to LUIS and route the message to the intent that it matches to. Add this snippet of code at the end to create a dialog for top news:
+Basically, when the user's utterance comes in to the bot it will make a call to LUIS and route the message to the intent that it matches to. Add this snippet of code at the end to create a dialog for top news:
 
 ```js
 bot.dialog('/topNews', [
@@ -122,7 +121,7 @@ Note that for security reasons it's generally not advisable to paste any keys, p
 With that, we can start calling the API. Modify '/topNews' to the following:
 
 ```js
-bot.dialog('/topnews', [
+bot.dialog('/topNews', [
     function (session){
         // Ask the user which category they would like
         // Choices are separated by |
@@ -225,20 +224,6 @@ bot.dialog('/topNews', [
     ...
 
 ]);
-```
-
-Lastly, let's update package.json to indicate that our starting script is app.js. Go to package.json and modify the scripts property to this:
-
-```js
-{
-    ...
-    "main": "app.js",
-    "scripts": {
-        "start": "node app.js"
-    },
-    "author": "Alyssa Ong",
-    ...
-}
 ```
 
 You have now successfully fetched news from civilization! Microsoft Bot Framework makes it easy to deploy your bot onto any platform, but you need to be aware that not all messaging platforms (e.g. Kik, Telegram) will support the same attachments (e.g. most of them support sending text and image messages, but not cards). While the logic is the same (i.e. the API calls you make will not change across the bots), you'd have to check which messaging platform the user's message is coming from, then handling how your response is sent based on that. I may do a tutorial for this in future. 

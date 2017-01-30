@@ -13,7 +13,7 @@ Welcome to the Mars Challenge. The Mars Challenge is a series of hands-on labs w
 ###Lab content
 
 Start with Mission 1.
-- [**Mission 1 and LUIS.md:**](MISSION1.md) Creating the bot and linking to LUIS
+- [**Mission 1:**](MISSION1.md) Creating the bot and linking to LUIS
 - [**Mission 2:**](MISSION2.md) Getting news from Earth through the bot
 - [**Mission 3:**](MISSION3.md) Identifying objects using the Computer Vision API (DIY Challenge)
 - [**Bonus:**](BONUS.md) Connecting the bot to other channels
