@@ -65,11 +65,11 @@ Go to the [Azure Portal](https://portal.azure.com). Click on 'New' (it's at the 
 
 It might take a while, but you will get notified when your web app has been successfully created. Once it has been created go into All Resources (it's on the sidebar) and look for the web app you just created. Click into it and it should display a dashboard with info about your web app. Click into the Github blade under Choose Source. Then, click into Authorization and log in with your Github credentials. Then, select the project and branch (should be master) that your bot is in. Leave the Performance Test as not configured and hit ok. 
 
-![CI](https://raw.githubusercontent.com/alyssaong1/HOL-NUSHackathon/master/Images/Bonus/cintegration.PNG)
+![CI](/Images/Bonus/cintegration.PNG)
 
 It may take a while for the latest commit to sync and be deployed to your web app. If the latest commit doesn't seem to be syncing, just hit sync. You'll see a green tick with your latest commit once it's done. 
 
-![CISuccess](https://raw.githubusercontent.com/alyssaong1/HOL-NUSHackathon/master/Images/Bonus/cintsuccess.PNG)
+![CISuccess](/Images/Bonus/cintsuccess.PNG)
 
 ##Registering your bot on the portal
 
@@ -84,12 +84,12 @@ After signing in, you will be greeted with a simple form that allows you to regi
 - The "Create Microsoft App ID and Password" button will open a new page which you can come back from afterwards.
 - You can also input your Azure Application Insights key if you enabled it when creating the Web App on Azure, but it's optional.
 
-![Registration](https://raw.githubusercontent.com/alyssaong1/HOL-NUSHackathon/master/Images/Portal/Registration.PNG)
+![Registration](/Images/Portal/Registration.PNG)
 
 ## Managing your new bot
 After registering, you'll be sent to the page where you can manage all your bots. Click on the bot you just created. The page should look like this:
 
-![Management](https://raw.githubusercontent.com/alyssaong1/HOL-NUSHackathon/master/Images/Portal/Management.PNG)
+![Management](/Images/Portal/Management.PNG)
 
 The top portion has several useful functions.
 - A testing function which will send a simple HTTP request to your messaging endpoint and give you back an appropriate success or error message.

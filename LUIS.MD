@@ -64,14 +64,14 @@ First, click the "Train" button on the bottom left so that LUIS can train itself
 
 Then, click the publish button on the top left.
 
-![Publish](Images/Luis/Publish.PNG)
+![Publish](/Images/Luis/Publish.PNG)
 
 Leave the checkbox unticked, then click the publish web service button. After publishing, a URL will be provided to you. Copy and take note of this URL.
 
 ## Updating LUIS
 Whenever we add new intents, entities or utterances, LUIS has to be updated. We can do this by clicking train again, then clicking the publish button.
 
-![Update](Images/Luis/UpdateNew.PNG)
+![Update](/Images/Luis/UpdateNew.PNG)
 
 ## Connecting LUIS to your bot
 Connecting LUIS to your bot is as simple as pasting the publish URL into the intent dialog you already have.
