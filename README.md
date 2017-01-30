@@ -18,6 +18,8 @@ Start with Mission 1.
 - [**Mission 3:**](MISSION3.md) Identifying objects using the Computer Vision API (DIY Challenge)
 - [**Bonus:**](BONUS.md) Connecting the bot to other channels
 
+You can find the finished project in the [Finished](/finished/) folder but try to see whether you can get there yourself without cheating.
+
 ###Links to get started
 
 - Microsoft Bot Framework documentation [Link](https://docs.botframework.com/en-us/)
