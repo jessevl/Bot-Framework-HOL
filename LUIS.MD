@@ -9,12 +9,12 @@ LUIS allows us to detect what the user wants based on the sentence they send, wh
 For example, let's say a user says "What's the news in `Paris` on `Thursday`?". Using LUIS, we can tell that the intent is to "GetNews" while the entities are location ("Paris") and date ("Thursday"). This allows the program to know that the user wants to find news at the location and date specified.
 
 ## Activating LUIS
-First, login to [LUIS.AI](LUIS.AI) using your personal Microsoft account. 
+First, login to [LUIS.AI](http://www.LUIS.AI) using your personal Microsoft account. 
 
 Your account by default is in a limited trial. If you want to enable your account for heavier usage you can generate new keys in the Azure Portal. Then hover over your name on the top right in the Luis.ai portal and click Settings. Go to the "Subscription Keys" tab where you can enter the subscription key you generated on Azure.
 
 ## Making a new LUIS app
-Go back to the [LUIS.AI](LUIS.AI) page and click Create New Application.
+Go back to the [LUIS.AI](http://www.LUIS.AI) page and click Create New Application.
 
 Fill up the form:
 - Name can be set to anything you want
